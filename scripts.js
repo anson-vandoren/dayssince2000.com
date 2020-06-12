@@ -35,7 +35,6 @@ function updateCurrentVersion() {
   let buildNum = Math.floor(
     1 + (now.getTime() - epoch.getTime()) / 86400000
   ).toString();
-  console.log(epoch);
 
   let versionNum = Math.floor((now - midnight) / 2000).toString();
   const verString = `X.Y.${buildNum}.${versionNum}`;
