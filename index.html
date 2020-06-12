@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Anson VanDoren" />
+    <meta
+      name="description"
+      content="Simple utility to determine date and time of a build from its MSBuild 'build number' and 'revision number'"
+    />
+    <title>Days Since 2000</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h2>If you built now, the version would be</h2>
+      <div id="current-version" class="mono">X.Y.7466.33189</div>
+      <hr />
+      <h2>If you have a build with version</h2>
+      <div>
+        <span class="mono">X.Y.</span
+        ><input
+          type="text"
+          id="input-build"
+          class="ver-input ver-input-build"
+          placeholder="7446"
+        /><span class="mono">.</span
+        ><input
+          type="text"
+          id="input-version"
+          class="ver-input ver-input-ver"
+          placeholder="33189"
+        />
+      </div>
+      <h2>It was built on</h2>
+      <div id="calculated-build-date" class="mono">
+        2020-06-11 18:26:18
+      </div>
+    </main>
+    <footer class="bottom-nav">
+      <a href="about.html">ABOUT</a>
+      <a
+        href="https://github.com/anson-vandoren/dayssince2000.com.git"
+        target="_"
+        >GITHUB</a
+      >
+      <a href="https://ansonvandoren.com" target="_">ME</a>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
