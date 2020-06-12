@@ -49,7 +49,6 @@ div {
 
 .mono {
   font-family: "PT Mono", monospace;
-  font-size: 2.5rem;
   padding: 0;
   margin: 0;
   border: 0;
@@ -80,23 +79,54 @@ a:hover::after {
   align-items: center;
 
   height: 3rem;
-  width: 40ch;
+  width: 35ch;
   max-width: 100%;
 
   font-family: "Encode Sans Expanded", sans-serif;
   font-size: 12px;
 }
 
+@media screen and (min-width: 601px) {
+  .ver-input {
+    font-size: 2.5rem;
+  }
+  .mono {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ver-input {
+    font-size: 2rem;
+  }
+  .mono {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .ver-input {
+    font-size: 7vw;
+  }
+  .mono {
+    font-size: 7vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+}
+
 .ver-input {
   font-family: "PT Mono", monospace;
-  /*font-weight: 600;*/
-
-  font-size: 2.5rem;
   text-align: center;
 
   background-color: transparent;
 
-  height: 2.5rem;
+  /*height: 2.5rem;*/
 
   padding: 0;
   margin: 0;
